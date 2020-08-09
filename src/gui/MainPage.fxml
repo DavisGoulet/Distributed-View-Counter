@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<BorderPane maxHeight="600"
+            maxWidth="800"
+            minHeight="600"
+            minWidth="800"
+            prefHeight="600"
+            prefWidth="800"
+            xmlns="http://javafx.com/javafx/8.0.111"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="gui.MainController">
+    <top>
+        <HBox>
+            <Label fx:id="nodeConnectionInfo"/>
+        </HBox>
+    </top>
+    <left>
+        <ScrollPane prefHeight="600"
+                    prefWidth="500"
+                    BorderPane.alignment="CENTER"
+                    fitToWidth="true">
+            <VBox prefHeight="600"
+                  prefWidth="500"
+                  style="-fx-background-color: white"
+                  fx:id="messageBox">
+            </VBox>
+        </ScrollPane>
+    </left>
+    <right>
+        <ScrollPane prefHeight="600"
+                    prefWidth="300"
+                    BorderPane.alignment="CENTER"
+                    fitToWidth="true">
+            <VBox prefHeight="600" prefWidth="300"
+                  style="-fx-background-color: white"
+                  fx:id="dataItemBox">
+            </VBox>
+        </ScrollPane>
+    </right>
+</BorderPane>
