@@ -12,3 +12,11 @@ Java application designed to keep a consistent view count for situations where o
 Eventual consistency is a consistency model used in situations where the application can be in an inconsistent state but eventually enters a consistency state if no new updates are made. In the context of this application, the central server may not have all views accounted for; some views may only be accounted for in worker nodes that have not sent updated information yet. If all worker nodes do not receive any requests however, the central server will get accurate view counts. No views were lost and no views were counted more than once. This is in comparison to something like a relational database satisfying the ACID properties.
 
 # Application
+
+#### Option Screen
+
+![ScreenShot](https://raw.githubusercontent.com/DavisGoulet/Distributed-View-Counter/master/images/OptionScreen.png)
+
+#### Application Screen 
+
+![ScreenShot](https://raw.githubusercontent.com/DavisGoulet/Distributed-View-Counter/master/images/MainScreen.png)
